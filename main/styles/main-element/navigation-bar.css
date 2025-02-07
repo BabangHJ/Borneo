@@ -1,0 +1,204 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   /* border: 1px red solid; */
+}
+
+@font-face {
+   font-family: Blanka;
+   src: url('../assets/Blanka.otf');
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   overflow-x: hidden;
+   background-color: #000;
+   position: relative;
+}
+
+.container {
+   position: relative;
+}
+
+.container > .main-content {
+   background: url(../assets/main-background.jpg), linear-gradient(to bottom, transparent 55%, #000) ;
+   background-size: cover;
+   width: 100%;
+   height: 720px;
+   object-fit: cover;
+   background-blend-mode: overlay;
+}
+
+.main-content > .navigation-bar {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   position: relative;
+   z-index: 2;
+}
+
+.main-content > .navigation-bar nav {
+   padding: 8px 0;
+   display: flex;
+   justify-content: space-between;
+   color: #000;
+   width: 99%;
+}
+
+.navigation-bar nav > .logo {
+   width: auto;
+   height: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 2rem;   
+}
+
+.navigation-bar nav > .logo > img {
+   width: 52px;
+   height: 52px;
+   margin: auto;
+   background-size: cover;
+   object-fit: cover;
+   transform: scale(1.8);
+   mix-blend-mode: multiply;
+   object-fit: cover;
+   background-size: cover;
+   background-position: center;
+}
+
+.navigation-bar nav > .navigation {
+   display: flex;
+   gap: 2rem;
+   width: fit-content;
+   margin: 0;
+   /* background-color: red; */
+} 
+
+.navigation-bar nav > .navigation ul {
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   align-items: center;
+   gap: 1.5rem;
+}
+
+.navigation-bar nav > .navigation ul li {
+   width: 100%;
+   color: #fff;
+   letter-spacing: 1px;
+   padding: 18px;
+   cursor: pointer;
+   font-size: 1.8rem;
+   text-shadow: 1.5px 1.5px 2px black;
+   font-family: serif;
+   font-weight: bold;
+}
+
+.navigation-bar nav > .navigation ul li a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.navigation-bar nav > .navigation ul li::after {
+   display: block;
+   content: '';
+   /* border-bottom: solid 4px #019fb6;  */
+   /* border-bottom: solid 4px #21c6ce; */
+   text-shadow: 10px 10px black;
+   transform: scaleX(0);  
+   box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+   /* border-top: solid 4px black; */
+   transition: transform 300ms ease-in-out;
+}
+
+.navigation-bar nav > .navigation ul li:hover::after {
+   transform: scaleX(1);
+}
+
+.navigation > .search-bar-content {
+   border: 2.5px solid white;
+   border-radius: 24px;
+   height: 36px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto 0;
+   min-width: 280px;
+   max-width: 320px;
+   box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.navigation > .search-bar-content input {
+   background: transparent;
+   border: none;
+   outline: none;
+   width: 80%;
+   color: white;
+   font-size: 1.1rem;
+   margin: auto 0;
+   font-weight: bold;
+   text-shadow: 1px 1px 1px rgba(9, 0, 0, 0.5);
+}
+
+.navigation > .search-bar-content input::placeholder {
+   color: #fff;
+}
+
+.navigation > .search-bar-content i {
+   color: #fff;
+   font-size: 1.2rem;
+   padding: 12px;
+}
+
+/* EXIT BAR NAVIGATION */
+.exit-bar {
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   padding: 1rem 2rem;
+}
+
+.exit-bar > .exit-bar-content {
+   width: auto;
+   height: 4rem;
+   display: flex;
+   background-color: #222;
+   padding: 2.5rem 1rem; 
+   align-items: center;
+   justify-content: center;
+   border-radius: 3rem;
+   gap: 2rem;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.exit-bar > .exit-bar-content > a {
+   font-size: 2rem;
+   color: #fff;
+   background-color: #333;
+   padding: 2rem;
+   border-radius: 50%;
+   aspect-ratio: 1 / 1;
+   position: relative;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+   transition: .4s ease;
+   text-decoration: none;
+}
+
+.exit-bar > .exit-bar-content > a > i {
+   margin: auto;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+}
+
+.exit-bar > .exit-bar-content > a:hover {
+   background-color: #444;
+   color: #222;
+}

@@ -1,0 +1,422 @@
+/* Medium devices (portrait tablets and large phones, 769px to 992px) */
+
+/* NAVIGATION BAR */
+.navigation li {
+    display: none;
+}
+
+.navigation-bar nav > .navigation ul {
+    gap: 1rem;
+}
+
+.navigation-bar nav > .logo > img {
+    transform: scale(1.2);
+}
+
+.navigation-bar nav > .logo {
+    margin-left: 1rem;
+}
+
+.navigation-bar nav > .navigation {
+    gap: 1rem;
+    margin: 0.5rem;
+}
+
+.navigation > .search-bar-content input {
+    font-size: 1rem;
+}
+
+.navigation > .search-bar-content i {
+    font-size: 1rem;
+}
+
+/* HAMBURGER MENU */
+.hamburger-menu {
+    display: flex;
+}
+
+/* FIRST CONTENT - Explore Indonesia Content */
+.explore-indonesia-content > .explore-indonesia-title > #explore {
+    font-size: 2.25em;
+    letter-spacing: 0.3rem;
+}
+
+.explore-indonesia-content > .explore-indonesia-title > #indonesia {
+    font-size: 3.15em;
+    letter-spacing: 0.9rem;
+    margin-right: -0.9rem;
+}
+
+/* FOOTER */
+.footer-title {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.footer-main-content {
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+
+.footer-copyright {
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.footer h1 {
+    font-size: 1.5rem;
+}
+
+.footer p, li {
+    font-size: 0.9rem;
+}
+
+.footer-main-content {
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+}
+
+.footer-menu li,
+.footer-category li,
+.footer-contact li {
+    margin: 2px 0;
+}
+
+.footer-menu ul,
+.footer-category ul,
+.footer-contact ul {
+    margin: 4px 0;
+}
+
+/* SECOND CONTENT - Container */
+.second-content {
+    overflow-x: hidden;
+}
+
+.second-content-top-grid, .second-content-bottom-grid {
+    padding: 0 1rem;
+    margin: 0.5rem auto;
+    width: 100%;
+    gap: 1rem;
+}
+
+.second-content-container {
+    padding: 8px 16px;
+    width: 380px;
+    height: 260px;
+}
+
+.second-content-container > h3 {
+    font-size: 1rem;
+}
+
+.second-content-container > .multicultural > h1 {
+    margin: 6px 0;
+    font-size: 1.7rem;
+}
+
+.second-content-container > .country > h1 {
+    margin: 4px 0;
+    font-size: 1.7rem;
+}
+
+.second-content-container > p {
+    margin: 6px 0;
+    font-size: 0.9rem;
+}
+
+.second-content-image > .first-page-accessories-4 {
+    position: absolute;
+    z-index: -100;
+    top: 45%;
+    left: 0%;
+    opacity: 0.25;
+    scale: 1.2;
+    z-index: -101;
+}
+
+.second-content-image > .first-page-accessories-1 {
+    transform: scale(0.6);
+}
+
+/* THIRD CONTENT - Explore */
+.third-content-wrappers {
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.third-content-wrappers > .third-content-texts > h1 {
+    font-size: 2rem;
+}
+
+.third-content-wrappers > .third-content-texts > p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+.third-content-texts > .third-content-explore-mores {
+    margin: 1rem 0;
+}
+
+/* THIRD CONTENT - Content Slider */
+.third-content-wrappers {
+    flex-direction: column;
+    padding: 15rem 2rem;
+}
+
+.third-content-wrappers > .third-content-texts {
+    margin: 0 auto;
+}
+
+.items {
+    right: 0;
+    top: 2rem;
+    margin: 0 auto;
+    height: 300px;
+    width: 400px;
+}
+
+.items .button-container {
+    width: 420px;
+    left: 50%;
+}
+
+.items .item {
+    height: 250px;
+    width: 150px;
+}
+
+.item.prev {
+    transform: translate(calc(-125% - 50px), -50%); 
+}
+
+.item.next {
+    transform: translate(calc(25% + 50px), -50%); 
+}
+
+.items .button-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    z-index: 100;
+}
+
+.items > .accessories-9 > img {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* FOURTH CONTENT - Content Slider */
+.fourth-content {
+    margin-top: 8rem;
+}
+
+.fourth-content  .fourth-container-content .fourth-image-content > p:nth-child(2) {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    align-self: center;
+    height: 20%;
+}
+
+.fourth-content  .fourth-container-content .fourth-image-content > p:nth-child(4) {
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}
+
+.fourth-container-content div:nth-child(1),
+.fourth-container-content div:nth-child(3) {
+    display: none;
+}
+
+.fourth-content .fourth-content-slider .button-fourth-content {
+    width: 120%;
+}
+
+.fourth-content .fourth-content-slider .button-fourth-content > button {
+    height: 50px;
+    width: 50px;
+}
+
+.fourth-content .fourth-content-slider .button-fourth-content > button i {
+    font-size: 3em;
+}
+
+/* NEWS - Container */
+.second-content-first-content {
+    width: 70%;
+}
+
+.news-content-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.news-h1 {
+    font-size: 1.6rem;
+}
+
+.news-content-top-post-description h3 {
+    font-size: 1rem;
+}
+
+.news-content-top-post-description p {
+    font-size: 1rem;
+}
+
+.news-content-top-post-description > .news-content-top-post-index {
+    font-size: 1.8rem;
+}
+
+.news-content-top-post > h1 {
+    font-size: 1.6rem;
+}
+
+.highlighted-post h2 {
+    font-size: 1.1rem;
+}
+
+.highlighted-post > .highlighted-post-description {
+    padding-bottom: 1.5rem;
+}
+
+.news-content-description {
+    font-size: 0.8rem;
+}
+
+.news-content-top-post {
+    padding: 0.7rem 1.2rem;
+}
+
+.news-content-top-post-description {
+    margin: 0.7rem;
+}
+
+.news-content-top-post-description > .news-content-top-post-index {
+    padding: 0.7rem;
+}
+
+/* EXIT BAR NAVIGATION */
+.exit-bar {
+    padding: 0.5rem 1rem;
+}
+
+.exit-bar > .exit-bar-content {
+    padding: 1.25rem 0.5rem;
+    gap: 1rem;
+    height: 3.5rem;
+}
+
+.exit-bar > .exit-bar-content > a {
+    padding: 1.3rem;
+    font-size: 1.3rem;
+}
+
+/* TRADITION PAGE */
+.tradition-main-background-texts > h1 {
+    font-size: 4rem;
+}
+
+.tradition-main-background-texts > h3 {
+    font-size: 1.5rem;
+}
+
+.tradition-thumbnail > h1 {
+    font-size: 4rem;
+}
+
+.tradition-description {
+    padding: 1rem 3rem;
+}
+
+.tradition-description > p {
+    padding: 1rem 2rem;
+}
+
+.tradition-wrapper-texts {
+    padding: 0.5rem 1rem;
+    margin: auto -1rem auto 0;
+    font-size: 0.9rem;
+}
+
+/* CUISINE PAGE */
+.cuisine-main-background-texts > h1 {
+    font-size: 4rem;
+}
+
+.cuisine-main-background-texts > h3 {
+    font-size: 1.5rem;
+}
+
+.cuisine-synopsis {
+    padding: 1rem 2rem;
+}
+
+.cuisine-synopsis > img {
+    width: 30%;
+    max-width: 200px;
+}
+
+.cuisine-synopsis > p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    width: 70%;
+}
+
+.cuisine-wrapper {
+    padding: 12rem 2.5rem 3rem 2.5rem;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+.cuisine-wrapper > .cuisine-wrapper-first,
+.cuisine-wrapper > .cuisine-wrapper-second {
+    width: 45%;
+    padding: 8rem 1.5rem 2rem 1.5rem;
+}
+
+.cuisine-description-texts {
+    padding: 2rem 1rem;
+}
+
+.cuisine-description-texts > h1 {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+}
+
+.cuisine-description-texts > p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.cuisine-video {
+    padding: 2rem 4rem;
+}
+
+/* GAMES PAGE */
+.games-main-background-texts > h1 {
+    font-size: 4rem;
+}
+
+.game-synopsis {
+    padding: 1.1rem 2.1rem;
+    font-size: 1rem;
+}
+
+.games-wrapper {
+    padding: 1.1rem 2.1rem;
+}
+
+.games-wrapper-texts {
+    padding: 1rem 2rem;
+    margin: auto 0 auto -1rem;
+    max-width: 360px;
+    font-size: 1rem;
+}
+
+.games-wrapper-texts > h1 {
+    font-size: 1.4rem;
+}
+
+.games-wrapper > .games-wrapper-thumbnail {
+    width: 40%;
+}
+
+.games-video {
+    padding: 2rem 4rem;
+}

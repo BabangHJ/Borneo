@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../main/styles/main-element/navigation-bar.css">
+        <link rel="stylesheet" href="../main/styles/main-element/news-page.css">
+        <link rel="stylesheet" href="../main/styles/main-element/hamburger-menu.css">
+        <link rel="stylesheet" href="../main/styles/main-element/footer.css">
+        <!--  -->
+        <link rel="stylesheet" href="../main/styles/responsives/viewport-extra-small.css" media="screen and (max-width: 600px)">
+        <link rel="stylesheet" href="../main/styles/responsives/viewport-small.css" media="screen and (min-width: 601px) and (max-width: 768px)">
+        <link rel="stylesheet" href="../main/styles/responsives/viewport-medium.css" media="screen and (min-width: 769px) and (max-width: 992px)">
+        <link rel="stylesheet" href="../main/styles/responsives/viewport-large.css" media="screen and (min-width: 993px) and (max-width: 1024px)">
+        <link rel="stylesheet" href="../main/styles/responsives/viewport-extra-large.css" media="screen and (min-width: 1024px)">
+        <!--  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="../main/styles/assets/logo-finale.png" type="image/x-icon">
+        <title>Borneo | News</title>
+    </head>
+    <body>
+        <div class="news-container">
+            <div class="main-content">
+                <div class="navigation-bar">
+                    <nav>
+                        <div class="logo">
+                            <img src="../main/styles/assets/logo-finale.png">
+                        </div>
+        
+                        <div class="navigation">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../main/explore.html">Explore</a></li>
+                                <li><a href="news.html">News</a></li>
+                            </ul>
+                            <div class="search-bar-content">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" placeholder="Search in here..">
+                                <i class="fa-solid fa-microphone"></i>
+                            </div>
+                            <div class="hamburger-menu" id="hamburger-menu">
+                                <a href="javascript:void(0)" onclick="hamburgerMenu(); hamburgerMenuAnimation()">
+                                    <i class="fa-solid fa-bars"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="hamburger-content" id="hamburger-content">
+                <a href="../index.html">
+                    <h1>Home</h1>
+                </a>
+                <a href="./explore.html">
+                    <h1>Explore</h1>
+                </a>
+                <a href="./news.html">
+                    <h1>News</h1>
+                </a>
+            </div>
+            <h1 class="news-h1">LATEST NEWS</h1>
+            <div class="second-content">
+                <div class="second-content-first-content">
+                    <div class="news-content-top-post">
+                        <h1>Top Posts</h1>
+                        <!-- First Top News -->
+                        <div class="news-content-top-post-description">
+                            <div class="news-content-top-post-index">1</div>
+                            <div class="news-content-top-post-texts">
+                                <h3>10 Potret Aksi Anak-anak Balutan Busana Adat Indonesia</h3>
+                                <p>Minggu, 26 November</p>
+                            </div>
+                        </div>
+                        <!-- Second Top News -->
+                        <div class="news-content-top-post-description">
+                            <div class="news-content-top-post-index">2</div>
+                            <div class="news-content-top-post-texts">
+                                <h3>Gurih Nagih Tiwul Goreng, Kuliner 
+                                    Favorit di Lereng Gunung Wilis Kediri</h3>
+                                <p>Minggu, 26 November</p>
+                            </div>
+                        </div>
+                        <!-- Third Top News -->
+                        <div class="news-content-top-post-description">
+                            <div class="news-content-top-post-index">3</div>
+                            <div class="news-content-top-post-texts">
+                                <h3>Kekhawatiran Seniman Muda saat
+                                    Reog Ponorogo Diklaim Malaya</h3>
+                                <p>Minggu, 26 November</p>
+                            </div>
+                        </div>
+                        <!-- Fourth Top News -->
+                        <div class="news-content-top-post-description">
+                            <div class="news-content-top-post-index">4</div>
+                            <div class="news-content-top-post-texts">
+                                <h3>WBI Foundation Gaet UMKM & Anak 
+                                    Muda Lestarikan Budaya Indonesia</h3>
+                                <p>Minggu, 26 November</p>
+                            </div>
+                        </div>
+                        <!-- Fifth Top News -->
+                        <div class="news-content-top-post-description">
+                            <div class="news-content-top-post-index">5</div>
+                            <div class="news-content-top-post-texts">
+                                <h3>-</h3>
+                                <p>Coming Soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Highlighted Post -->
+                    <div class="highlighted-post">
+                        <div class="highlighted-post-image">
+                            <img src="https://awsimages.detik.net.id/community/media/visual/2020/03/10/ad5219c3-169b-4a20-b696-8871091db196_169.jpeg?w=780&q=90">
+                        </div>
+                        <div class="highlighted-post-description">
+                            <h2>Catat, Ini Faktor Penyebab Keberagaman Suku dan Budaya di Indonesia</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-content-grid">
+                    <!-- First News -->
+                    <div class="news-content">
+                        <div class="news-content-image">
+                            <img src="https://static.republika.co.id/uploads/images/inline/190626175535-122.jpg">
+                        </div>
+                        <div class="news-content-description">
+                            <p>Minggu, 26 November</p>
+                            <h2>Pertunjukkan Budaya Indonesia Pukau Warga Turki</h2>
+                        </div>
+                    </div>
+                    <!-- Second News -->
+                    <div class="news-content">
+                        <div class="news-content-image">
+                            <img src="https://akcdn.detik.net.id/community/media/visual/2023/02/03/panglima-tni-laksamana-yudo-margono-dan-kapolri-jenderal-listyo-sigit-prabowo-di-acara-pagelaran-wayang-kulit-bertajuk-wahyu-m-7_43.jpeg?w=700&q=90">
+                        </div>
+                        <div class="news-content-description">
+                            <p>Minggu, 26 November</p>
+                            <h2>Panglima TNI Ajak Lestarikan Wayang: Jangan Nanti Kita Nonton di Luar Negeri
+                            </h2>
+                        </div>
+                    </div>
+                    <!-- Third News -->
+                    <div class="news-content">
+                        <div class="news-content-image">
+                            <img src="https://www.goodnewsfromindonesia.id/uploads/post/large-shutterstock-1021780396-835257b7931e538068b27ec219989f67.jpg">
+                        </div>
+                        <div class="news-content-description">
+                            <p>Minggu, 26 November</p>
+                            <h2>Mengenal Batik Basurek, Busana Khas Bengkulu</h2>
+                        </div>
+                    </div>
+                    <!-- Fourth News -->
+                    <div class="news-content">
+                        <div class="news-content-image">
+                            <img src="https://akcdn.detik.net.id/community/media/visual/2022/05/18/mahasiswa-keio-university-belajar-tari-piring.jpeg?w=700&q=90">
+                        </div>
+                        <div class="news-content-description">
+                            <p>Minggu, 26 November</p>
+                            <h2>Mahasiswa Jepang di Keio University Antusias Belajar Tari Piring</h2>
+                        </div>
+                    </div>
+                    <!-- Fifth News -->
+                    <div class="news-content">
+                        <div class="news-content-image">
+                            <img src="https://i.ytimg.com/vi/V5YGfCNZ5nw/maxresdefault.jpg">
+                        </div>
+                        <div class="news-content-description">
+                            <p>Minggu, 26 November</p>
+                            <h2>Fungsi Gordang Sambilan Sebelum Masyarakat Mandailing Kenal Islam</h2>
+                        </div>
+                    </div>
+                    <!-- Sixth News -->
+                    <div class="news-content">
+                        <div class="news-content-image">
+                            <img src="https://icon-library.com/images/none-icon/none-icon-0.jpg">
+                        </div>
+                        <div class="news-content-description">
+                            <p>-</p>
+                            <h2>Coming Soon</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="first-footer-content">
+                    <div class="footer-title">
+                        <div class="footer-title-main">
+                            <img src="../main/styles/assets/logo-finale.png">
+                            <h1>INDONESIA SPACE</h1>
+                        </div>
+                        <p>Subscribe to get the freshest Indonesia Space News!</p>
+                        <div class="subscribe-letter">
+                            <input type="text" placeholder="Your email here">
+                            <div class="subscribe-button">
+                                <a href="#none">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-main-content">
+                        <div class="footer-menu">
+                            <h1>Menu</h1>
+                            <ul>
+                                <li>
+                                    <a href="../index.html#second">Home</a>
+                                </li>
+                                <li>
+                                    <a href="../main/explore.html">Explore</a>
+                                </li>
+                                <li>
+                                    <a href="../main/news.html">News</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-category">
+                            <h1>Category</h1>
+                            <ul>
+                                <li>
+                                    <a href="../main/cuisine-page.html">Cuisine</a>
+                                </li>
+                                <li>Arts</li>
+                                <li>
+                                    <a href="../main/games-page.html">Games</a>
+                                </li>
+                                <li>
+                                    <a href="../main/tradition-page.html">Tradition</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-contact">
+                            <h1>Contact Us</h1>
+                            <ul>
+                                <li>+62 896 1122 6789</li>
+                                <li>indonesiaspace@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <p>© 2023 Indonesia Space. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="../main/styles/page-function/hamburger-menu.js"></script>
+</html>
